@@ -90,6 +90,9 @@
     <Compile Include="TodoList.Designer.cs">
       <DependentUpon>TodoList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ToggleButtonCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Bath.resx">
       <DependentUpon>Bath.cs</DependentUpon>
     </EmbeddedResource>

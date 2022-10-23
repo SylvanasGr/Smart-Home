@@ -19,7 +19,8 @@ namespace Smart_Home
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            CheckBox checkBox = new System.Windows.Forms.CheckBox();
+            checkBox.Appearance = System.Windows.Forms.Appearance.Button;
         }
 
 
@@ -184,6 +185,11 @@ namespace Smart_Home
         {
             pictureBox3.BackColor = Color.PapayaWhip;
             panel3.BackColor = Color.PapayaWhip;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
