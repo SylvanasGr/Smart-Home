@@ -30,10 +30,10 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,13 +45,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.toggleButtonCustom1 = new Smart_Home.ToggleButtonCustom();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,28 +84,6 @@
             this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
             this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.PapayaWhip;
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Location = new System.Drawing.Point(998, 430);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(155, 100);
-            this.panel6.TabIndex = 0;
-            this.panel6.MouseLeave += new System.EventHandler(this.panel6_MouseLeave);
-            this.panel6.MouseHover += new System.EventHandler(this.panel6_MouseHover);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.PapayaWhip;
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Location = new System.Drawing.Point(998, 536);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(155, 100);
-            this.panel8.TabIndex = 4;
-            this.panel8.MouseLeave += new System.EventHandler(this.panel8_MouseLeave);
-            this.panel8.MouseHover += new System.EventHandler(this.panel8_MouseHover);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::Smart_Home.Properties.Resources.shoes;
@@ -116,6 +95,17 @@
             this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
             this.pictureBox4.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel6.Controls.Add(this.pictureBox5);
+            this.panel6.Location = new System.Drawing.Point(998, 430);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(155, 100);
+            this.panel6.TabIndex = 0;
+            this.panel6.MouseLeave += new System.EventHandler(this.panel6_MouseLeave);
+            this.panel6.MouseHover += new System.EventHandler(this.panel6_MouseHover);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImage = global::Smart_Home.Properties.Resources.bathroom;
@@ -126,6 +116,17 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.MouseLeave += new System.EventHandler(this.pictureBox5_MouseLeave);
             this.pictureBox5.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Location = new System.Drawing.Point(998, 536);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(155, 100);
+            this.panel8.TabIndex = 4;
+            this.panel8.MouseLeave += new System.EventHandler(this.panel8_MouseLeave);
+            this.panel8.MouseHover += new System.EventHandler(this.panel8_MouseHover);
             // 
             // pictureBox6
             // 
@@ -234,27 +235,35 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.checkBox1);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.toggleButtonCustom1);
             this.panel4.Location = new System.Drawing.Point(3, 492);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(134, 137);
             this.panel4.TabIndex = 12;
             // 
-            // checkBox1
+            // label2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(8, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Off";
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(525, 337);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(83, 65);
+            this.panel7.TabIndex = 13;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // toggleButtonCustom1
             // 
             this.toggleButtonCustom1.AutoSize = true;
-            this.toggleButtonCustom1.Location = new System.Drawing.Point(404, 507);
+            this.toggleButtonCustom1.Location = new System.Drawing.Point(78, 7);
             this.toggleButtonCustom1.MinimumSize = new System.Drawing.Size(45, 22);
             this.toggleButtonCustom1.Name = "toggleButtonCustom1";
             this.toggleButtonCustom1.OffBackColor = System.Drawing.Color.Gray;
@@ -271,7 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1153, 637);
-            this.Controls.Add(this.toggleButtonCustom1);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -287,10 +296,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -324,8 +333,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.CheckBox checkBox1;
         private ToggleButtonCustom toggleButtonCustom1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 

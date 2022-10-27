@@ -138,11 +138,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\alarm.png" />
     <Content Include="Images\background.png" />
     <Content Include="Images\bathroom.png" />
     <Content Include="Images\bedroom.png" />
     <Content Include="Images\calendar.png" />
+    <Content Include="Images\cctv-camera.png" />
     <Content Include="Images\kitchen.png" />
+    <Content Include="Images\lightbulb.png" />
     <Content Include="Images\pets.png" />
     <Content Include="Images\shoes.png" />
   </ItemGroup>
