@@ -1,4 +1,6 @@
-﻿namespace Smart_Home
+﻿using System;
+
+namespace Smart_Home
 {
     partial class TodoList
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -47,15 +50,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.Location = new System.Drawing.Point(1002, 2);
+            this.button1.Location = new System.Drawing.Point(1029, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 41);
+            this.button1.Size = new System.Drawing.Size(109, 41);
             this.button1.TabIndex = 2;
             this.button1.Text = "Αρχική Οθόνη";
             this.button1.UseVisualStyleBackColor = false;
@@ -68,8 +73,8 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Πανεπιστήμιο",
             "Διασκέδαση",
-            "Γυμναστήριο",
-            "Φαγητό",
+            "Γυμναστήριο+ ",
+            "Φαγητό+",
             "Διαλογισμός",
             "Σινέμα",
             "Καφέ",
@@ -87,7 +92,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -202,7 +206,6 @@
             this.label2.Size = new System.Drawing.Size(74, 15);
             this.label2.TabIndex = 9;
             this.label2.Text = "Τοποθεσία";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -243,7 +246,6 @@
             this.label6.Size = new System.Drawing.Size(126, 15);
             this.label6.TabIndex = 14;
             this.label6.Text = "Αυτόματος Βοηθός";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // comboBox6
             // 
@@ -265,7 +267,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(1111, 134);
             this.listBox1.TabIndex = 15;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -286,7 +287,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Προσθήκη";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
@@ -317,14 +318,30 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(927, 22);
             this.comboBox7.TabIndex = 20;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button5.Location = new System.Drawing.Point(1029, 42);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 39);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "Βοήθεια";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 850;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // TodoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(1135, 501);
+            this.ClientSize = new System.Drawing.Size(1153, 501);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -353,6 +370,8 @@
 
         }
 
+
+
         #endregion
 
         private System.Windows.Forms.Button button1;
@@ -374,5 +393,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
